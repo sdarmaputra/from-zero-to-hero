@@ -22,15 +22,19 @@
     "karma": "^0.13.21",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.4",
     "karma-detect-browsers": "^2.0.2",
     "karma-firefox-launcher": "^0.1.7",
     "karma-ie-launcher": "^0.2.0",
     "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-safari-launcher": "^0.1.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.4"
   },
   "scripts": {
     "start": "http-server -p 9000",
-    "test": "cd test && karma start"
+    "test": "cd test && karma start",
+    "coverage": "cd test && karma start coverage.conf"
   }
 }
