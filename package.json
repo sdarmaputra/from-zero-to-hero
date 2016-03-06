@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "codecov": "^1.0.1",
     "complexity-report": "^1.4.1",
     "http-server": "^0.9.0",
     "karma": "^0.13.21",
@@ -38,6 +39,7 @@
     "test": "cd test && karma start",
     "coverage": "cd test && karma start coverage.conf",
     "complexity": "node node_modules/complexity-report/src/index.js -f plain js/*.js",
-    "travis": "npm run coverage && npm run complexity"
+    "codecov": "istanbul report cobertura && codecov < ./coverage/cobertura-coverage.xml",
+    "travis": "npm run coverage && npm run codecov && npm run complexity"
   }
 }
