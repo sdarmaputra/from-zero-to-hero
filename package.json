@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
+    "complexity-report": "^1.4.1",
     "http-server": "^0.9.0",
     "karma": "^0.13.21",
     "karma-chai": "^0.1.0",
@@ -36,6 +37,7 @@
     "start": "http-server -p 9000",
     "test": "cd test && karma start",
     "coverage": "cd test && karma start coverage.conf",
-    "travis": "npm run coverage"
+    "complexity": "node node_modules/complexity-report/src/index.js -f plain js/*.js",
+    "travis": "npm run coverage && npm run complexity"
   }
 }
