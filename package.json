@@ -35,6 +35,7 @@
   "scripts": {
     "start": "http-server -p 9000",
     "test": "cd test && karma start",
-    "coverage": "cd test && karma start coverage.conf"
+    "coverage": "cd test && karma start coverage.conf",
+    "travis": "npm run coverage"
   }
 }
