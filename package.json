@@ -21,6 +21,7 @@
     "codecov": "^1.0.1",
     "complexity-report": "^1.4.1",
     "http-server": "^0.9.0",
+    "jscs": "^2.10.1",
     "karma": "^0.13.21",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^0.2.2",
@@ -36,6 +37,7 @@
   },
   "scripts": {
     "start": "http-server -p 9000",
+    "jscs": "jscs -p idiomatic js/*.js",
     "test": "cd test && karma start",
     "coverage": "cd test && karma start coverage.conf",
     "complexity": "node node_modules/complexity-report/src/index.js -f plain js/*.js",
