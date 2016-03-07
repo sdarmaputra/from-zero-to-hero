@@ -32,6 +32,7 @@
     "karma-mocha": "^0.2.2",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-safari-launcher": "^0.1.1",
+    "karma-sauce-launcher": "^0.3.1",
     "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.4"
   },
@@ -41,6 +42,7 @@
     "test": "cd test && karma start",
     "coverage": "cd test && karma start coverage.conf",
     "complexity": "node node_modules/complexity-report/src/index.js -f plain js/*.js",
+    "saucelabs": "cd test && karma start saucelabs.conf",
     "codecov": "istanbul report cobertura && codecov < ./coverage/cobertura-coverage.xml",
     "travis": "npm run coverage && npm run codecov && npm run complexity"
   }
