@@ -1,0 +1,3 @@
+echo '------------------------'
+echo 'this is pre-commmit hook'
+echo '------------------------'

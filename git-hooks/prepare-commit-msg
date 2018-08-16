@@ -1,0 +1,7 @@
+echo '-------------------------------'
+echo 'this is prepare-commit-msg hook'
+echo '-------------------------------'
+
+echo "Please write a meaningful commit message :p
+  Help your co-workers understand what\'s going on,
+  and make them happy :)\n\n" > $1
